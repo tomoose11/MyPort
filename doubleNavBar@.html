@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <style>
+            .navBar{
+                position:fixed;
+                top:0px;
+                left:0;
+                height:23%;
+                width:100%;
+                background-color: white;
+                z-index: 1;
+            }
+            .title {
+                color:rgb(32, 32, 32);
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 3.8vw;
+                position: relative;
+                top:38px;
+                margin-left:8%;
+                /*border: 1px solid rgba(32, 32, 32, 0.377);*/
+                width:20%;
+                text-align: center;
+                padding-bottom:5px;
+                
+                
+                
+
+            }
+            .buttons {
+                position: relative;
+                color:white;
+                font-family: trebuchet;
+                font-size: 1.7vw;
+                float: right;
+                padding-left: 4%;
+                border-left:1px solid rgb(32, 32, 32);  ;
+                padding-right: 4%;  
+                color: rgb(32, 32, 32);   
+                top:-3%;        
+            }
+            .buttons:hover {
+                border-bottom:5px solid rgb(196, 17, 47);
+            }
+            #last{
+                padding-right:140px;
+            }
+            .navBar2{
+                position:fixed;
+                top:130px;
+                left:0;
+                height:100px;
+                width:100%;
+                background-color:rgb(6, 6, 31);
+                display: flex;
+                z-index: 1;
+                
+            }
+            .n2but{
+                color:white;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                margin:auto;
+                transform:scale(1.5);
+                
+                
+            }
+            .n2but:hover{
+                transform:scale(2);
+                transition:300ms;
+            }
+            .mainPage{
+                background-color:rgba(128, 128, 128, 0.089);
+                height:1000px;
+                width:82%;
+                margin:auto;
+                top:210px;
+                position: relative;
+            }
+            .cont{
+                top: 100px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                left: 5%;
+            }
+            .pic {
+                margin: auto;
+            }
+            #pic1{
+                height:26%;
+                width:70%;
+                border-radius: 100%;
+                
+            }
+            #pic3{
+                height:26%;
+                width:70%;
+                border-radius: 100%;
+                
+            }
+            #txt{
+                width:250px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="navBar">
+            <div class="title">TW Design</div>
+            <div class="buttons" id="last">Gallery</div>
+            <div class="buttons">History</div>
+            <div class="buttons">FAQ</div>
+        </div>
+        <div class="navBar2">
+            <div class="n2but">2016</div>
+            <div class="n2but">2017</div>
+            <div class="n2but">2018</div>
+            <div class="n2but">2019</div>
+        </div>
+        <div class="mainPage">
+            <div class="cont">
+                <div class="pic">
+                    <img src="item3.jpg" id="pic1"/>
+                    <p id="txt">Look at some of the beautiful places you can 
+                        visit in Thailand!
+                    </p>
+                </div>
+                <div class="pic">
+                    <img src="item2.jpg" id="pic1"/>
+                    <p id="txt">Look at some of the beautiful places you can 
+                        visit in Thailand!
+                    </p>
+                </div>
+                <div class="pic">
+                    <img src="item4.jpg" id="pic3"/>
+                    <p id="txt">Look at some of the beautiful places you can 
+                        visit in Thailand!
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

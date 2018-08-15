@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+        <style>
+            #cover{
+                background-color:black;
+                height: 100%;
+                width:100%;
+            }
+
+             #tank {
+                display: none;
+            }
+
+            #p:after {
+                content: "|";
+                animation: cursor 500ms linear infinite alternate;
+            }
+
+            #matrix{
+                color: rgb(141, 230, 141);
+                font-size: 25px;
+                position: absolute;
+                top: 35%;
+                left: 38%;
+            }
+
+            #wrap {
+                display: inline-block;
+                
+                width: 80%;
+                position: absolute;
+                left:10%;
+                top:15%;
+            }
+
+            #p {
+               
+
+                color: rgb(141, 230, 141);
+                font-family: 'Play', sans-serif;
+            }
+
+           
+
+            @keyframes cursor {
+                0% {
+                    opacity: 0;
+                }
+                50% {
+                    opacity: 0;
+                }
+                51%{
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="cover">
+                <div id="wrap">
+<div id="tank">
+I have traveled to many places over the last 10 years but none of them is quite like home! \n
+Having said that, if I had decided to live in any of them for the rest of my life,
+I think I could have done so quite happily :)<span/>
+</div>
+                <div id="p"></div>
+                </div>
+
+        </div>
+    </body>
+    <script>
+        var cover = document.getElementById("cover");
+        cover.style.transform = "translate(0%,0%)";
+        
+        
+        
+
+        setInterval(()=>{
+            cover.style.transition = "1200ms";
+            cover.style.transform = "translate(-102%,0%)";
+        },20000);
+
+
+        tank.style.fontSize = "35px";
+        p.style.fontSize = "22px";
+        index = 0;
+        write();
+        
+        
+        function write() {
+            if(p.innerHTML.length > 1 && p.innerHTML[p.innerHTML.length-1] != "!") {
+            p.innerHTML = p.innerHTML.slice(0,p.innerHTML.length -1);
+            }
+            p.innerHTML += (tank.innerHTML[index]+"|");
+            index += 1;
+            if (tank.innerHTML[index] != "<" && tank.innerHTML[index-1] != "!" ) {
+            setTimeout(write,70);
+            }
+            if (tank.innerHTML[index-1] == "!") {
+                setTimeout(write,2000)
+                p.innerHTML = p.innerHTML.slice(0,p.innerHTML.length -1);
+            }
+            if (tank.innerHTML[index] == "<") {
+                p.innerHTML = p.innerHTML.slice(0,p.innerHTML.length -1);
+            }
+
+           
+            
+        }
+        
+    </script>
+</html>

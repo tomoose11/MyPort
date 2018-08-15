@@ -1,0 +1,18 @@
+{
+  "name": "myport",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "tomoose11 <31065786+tomoose11@users.noreply.github.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

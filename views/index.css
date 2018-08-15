@@ -1,0 +1,165 @@
+@import "./bootstrap.css";
+
+#nav{
+    background-color: grey;
+    height:40%;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 100px;
+    text-align: center;
+    color:white;
+    line-height: 250%;
+    font-weight: 300;
+    position: fixed;
+    z-index: 1;
+    width: 110%;
+    left:0%;
+    box-shadow: 0.3px 1px 1px 1px rgb(206, 202, 202);
+    
+}
+
+.circs{
+    transform-origin: 50% 50%;
+    position: absolute;
+    left:10%;
+    top:48%;
+    animation: rot 4000ms linear infinite;
+    
+}
+
+.circ {
+    background-color:white;
+    height:50px;
+    width:50px;
+    border-radius: 100%;
+}
+
+.circs :nth-child(1) {
+    background-color: rgb(24, 24, 243);
+    position: absolute;
+    left:-50px;
+}
+.circs :nth-child(2) {
+    background-color: red;
+    position: absolute;
+    left:-50px;
+    top:-50px;
+}
+.circs :nth-child(3) {
+    background-color: rgb(33, 245, 33);
+    position: absolute;
+    top:-50px;
+}
+.circs :nth-child(4) {
+    background-color: yellow;
+    position: absolute;
+    top:0px;
+    
+}
+
+#mbheader {
+    
+    text-align: center;
+    padding: 2%;
+    font-weight: bold;
+}
+
+#mbheader2 {
+    text-align: center;
+    padding: 2%;
+    font-weight: bold;
+}
+
+.sCont {
+    border-right: 0.5px solid rgba(128, 128, 128, 0.219);
+    margin:0px -15px 0px 50px;
+    background-color: white;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.sCont2 {
+    border-top-right-radius: 50px;
+    margin:0px 50px 0px -15px;
+    background-color: white;
+    border-bottom-right-radius: 50px;
+    
+}
+
+.footCont {
+    margin: 40px 0px 0px 40px;
+    border-right:0.5px solid grey;
+}
+
+.footCont div p {
+    font-size: 14px;
+}
+
+.picCont{
+    height:42%;
+    width:65%;
+    margin:auto;
+    
+    justify-content: space-evenly;
+    box-shadow: 0px 3px 2px 0px gray;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+
+.im {
+    height: 100%;
+    width:100%;
+    
+    transition:500ms;
+}
+
+.im:hover{
+    transform: scale(1.35);
+    transition: 500ms;
+    
+}
+
+
+
+@keyframes rot {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+@media screen and (max-height:600px) {
+        #nav{font-size: 70px;
+        
+        }
+}
+
+@media screen and (max-width: 900px) {
+    #nav{
+        font-size: 50px;
+        height:23%;
+    }
+
+}
+
+@media screen and (max-width: 920px) {
+    .sCont {
+        border-right: 0.5px solid rgba(128, 128, 128, 0.219);
+        margin:0px 0px 0px 0px;
+        background-color: white;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    
+    .sCont2 {
+        border-top-right-radius: 0px;
+        margin:0px 0px 0px 0px;
+        background-color: white;
+        border-bottom-right-radius: 0px;
+        
+    }
+
+}
+
