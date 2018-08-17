@@ -1,13 +1,14 @@
 @import "./bootstrap.css";
 
 #nav{
+    font-size: 100px;
     background-color: grey;
     height:40%;
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 100px;
+    
     text-align: center;
     color:white;
-    line-height: 250%;
+    line-height: 230%;
     font-weight: 300;
     position: fixed;
     z-index: 1;
@@ -130,7 +131,7 @@
 
 
 
-@media screen and (max-height:600px) {
+@media screen and (max-height:500px) {
         #nav{font-size: 70px;
         
         }
